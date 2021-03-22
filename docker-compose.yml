@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  webapp:
+    build:
+      context: ./web
+      dockerfile: dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/code
